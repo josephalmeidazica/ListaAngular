@@ -1,6 +1,9 @@
-<p>Insira o mês atual: </p>
-<form [formGroup]="estacoesForm" (ngSubmit)="onSubmit()">
-  <input formControlName="mes" name="mes" placeholder="Insira o mês atual:">
-  <input type="submit" value="Enviar">
-</form>
-<p>{{estacao}}</p>
+<div class="text-center">
+  <p class="display-1">Insira o mês atual: </p>
+  <form class="form-control text-right ml-4 visor" [formGroup]="estacoesForm" (ngSubmit)="onSubmit()">
+    <input formControlName="mes" name="mes" placeholder="mes">
+    <input class="btn btn-primary" type="submit" value="Enviar">
+  </form>
+  <p class="lead">{{estacao}}</p>
+</div>
+
